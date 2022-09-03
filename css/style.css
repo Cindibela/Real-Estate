@@ -54,6 +54,10 @@ display: flex;
  
 }
 
+.navlink .login{
+    display: none;
+}
+
 .login{
     display: flex;
     gap: 20px;
@@ -163,8 +167,21 @@ display: flex;
     gap: 40px;
 }
 
-.buy{
+.carousel-caption h5{
+    color: #fff !important;
+    background: #344767;
+    padding: 5px 5px;
+    border-radius: 20px;
     
+}
+
+.sell{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/int2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .certificate img{
@@ -222,6 +239,10 @@ display: flex;
         height: 100vh;
         padding: 2rem;
         transition: .5s;
+    }
+
+    .navlink .login{
+        display: block;
     }
 
     .search{
