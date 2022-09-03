@@ -256,3 +256,9 @@ display: flex;
 
 
 }
+
+@media screen and (max-width:576px) {
+    .login-box{
+        width: 80%;
+    }
+}
