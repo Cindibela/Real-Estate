@@ -175,14 +175,40 @@ display: flex;
     
 }
 
-.sell{
+#career{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)),url('/img/career3.webp');
     height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/int2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-size:cover;
+    background-position:center;
+    color: #fff !important;
+    position: relative;
+    padding-bottom: 5rem;
+    
 }
+
+#career h1{
+color: #fff;
+font-size: 80px;
+
+}
+
+#career p{
+    font-size: 20px;
+    background: #344767;
+    display: inline-block;
+
+
+}
+.btnstart{
+   
+    display: inline-block;
+}
+
+.apply{
+    position: relative;
+}
+
 
 .certificate img{
     width: 15rem;
@@ -257,8 +283,22 @@ display: flex;
 
 }
 
+@media screen and (max-width:768px) {
+
+    #career h1{
+        font-size: 40px;
+        padding: 40px 0;
+        
+    }
+    .btnstart{
+        width: 100%;
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width:576px) {
     .login-box{
         width: 80%;
     }
 }
+
