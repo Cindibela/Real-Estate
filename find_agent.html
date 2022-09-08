@@ -60,27 +60,27 @@
                         <!-- <p class="mb-0">Enter your email and password to sign in</p> -->
                       </div>
                       <div class="card-body">
-                        <form role="form">
+                        <form role="form" id="contactForm">
+                          <div class="errorDiv"></div>
                           <div class="mb-3">
                             <label for="">Name</label>
-                            <input type="text" class="form-control form-control-lg" placeholder="Name" aria-label="Name">
+                            <input name="name" type="text" class="form-control form-control-lg" placeholder="Name" aria-label="Name">
                           </div>
                           <div class="mb-3">
                             <label for="">Email</label>
-                            <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                            <input name="email" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
                           </div>
                           <div class="mb-3">
                             <label for="">Phone Number</label>
-                            <input type="text" class="form-control form-control-lg" placeholder="Phone number" aria-label="Password">
+                            <input name="phoneNum" type="text" class="form-control form-control-lg" placeholder="Phone number" aria-label="Password">
                           </div>
                           <div class="mb-3">
                             <label for="">Message</label>
-                            <textarea name="" class="form-control" id="" cols="20" rows="4"></textarea>
-                           
+                            <textarea name="message" class="form-control" id="" cols="20" rows="4"></textarea>
                           </div>
                           <p>This site is protected by reCAPTCHA and the Google <a href=""> Policy </a>and <a href="">Terms of Service apply.</a></p>
                           <div class="text-center">
-                            <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Send Message</button>
+                            <input type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0" value="Send Message" />
                           </div>
                         </form>
                       </div>
@@ -165,5 +165,32 @@
 
       <script src="https://unpkg.com/phosphor-icons"></script>
       <script src="/js/main.js"></script>
+
+      <script>
+        const contactForm = document.querySelector('#contactForm')
+        const errorDiv = document.querySelector('.errorDiv')
+
+        contactForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        formValidation( 
+                        contactForm.name.value.trim(), 
+                        contactForm.email.value.trim(), 
+                        contactForm.phoneNum.value.trim(), 
+                        contactForm.message.value.trim()
+                    )
+    })
+
+    function formValidation(name, email, phoneNum, message){
+        let errMsg;
+        if(!name || !email || !phoneNum || !message){
+            errMsg = "Please fill in all fields"
+            errorDiv.innerHTML = `<p class="bg-danger text-center text-light py-1">${errMsg}</p>`
+        }
+
+        setTimeout(() => {
+            errorDiv.innerHTML = ""
+        },5000)
+    }
+  </script>
 </body>
 </html>
