@@ -55,20 +55,21 @@
           <h4 class="font-weight-bolder">Login</h4>
           <p class="mb-0">Enter your email and password to sign in</p>
         </div>
-        <div class="card-body">
-          <form role="form">
+        <div class="card-body" >
+          <form role="form" id="contactForm">
+            <div class="errorDiv"></div>
             <div class="mb-3">
-              <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+              <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
+              <input type="password" id="=password" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
             </div>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" id="rememberMe">
               <label class="form-check-label" for="rememberMe">Remember me</label>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+              <input type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0" value="Sign in" />
             </div>
           </form>
         </div>
@@ -88,5 +89,30 @@
 
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="/js/main.js"></script>
+
+    <script>
+      const contactForm = document.querySelector('#contactForm')
+      const errorDiv = document.querySelector('.errorDiv')
+
+      contactForm.addEventListener('submit', (e) => {
+      e.preventDefault()
+      formValidation( 
+                      contactForm.email.value.trim(),
+                      document.querySelector(".password"),
+                  )
+      })
+
+      function formValidation(email, password){
+          let errMsg;
+          if(!email || !password){
+              errMsg = "Please fill in all fields"
+              errorDiv.innerHTML = `<p class="bg-danger text-center text-light py-1">${errMsg}</p>`
+          }
+
+          setTimeout(() => {
+              errorDiv.innerHTML = ""
+          },5000)
+      }
+    </script>
     </body>
     </html>
