@@ -178,7 +178,7 @@ display: flex;
 
 #career{
     background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)),url('/img/career3.webp');
-    height: 100vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -336,7 +336,7 @@ font-size: 80px;
         padding: 40px 0;
     }
 
-    .sell a{
+    .btnsell a{
         width: 100%;
         display: inline-block;
     }
