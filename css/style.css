@@ -331,12 +331,12 @@ font-size: 80px;
         width: 100%;
         display: inline-block;
     }
-    .sell{
+    .sell h1{
         font-size: 40px;
         padding: 40px 0;
     }
 
-    .btnsell{
+    .sell a{
         width: 100%;
         display: inline-block;
     }
