@@ -331,6 +331,15 @@ font-size: 80px;
         width: 100%;
         display: inline-block;
     }
+    .sell{
+        font-size: 40px;
+        padding: 40px 0;
+    }
+
+    .btnsell{
+        width: 100%;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width:576px) {
