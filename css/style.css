@@ -242,13 +242,14 @@ font-size: 80px;
     background-size: cover;
     background-position: center;
     height: 80vh;
+    
    
 }
 
 .sell h1{
   color: #fff;
-  font-size: 70px;
-  margin-top: 30px;
+  font-size: 80px;
+  margin-top: 70px;
 }
 .agent{
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/agent3.jpg);
@@ -339,6 +340,9 @@ font-size: 80px;
     .btnsell a{
         width: 100%;
         display: inline-block;
+    }
+    .terms{
+        display: grid;
     }
 }
 
