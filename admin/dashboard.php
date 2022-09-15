@@ -1,3 +1,14 @@
+<?php
+ session_start();
+ include ('connect.php');
+//  include('check_login.php');
+//  require('/includes/check_login.php');
+
+
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +16,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" href="/img/build7.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/build7.jpg" type="image/x-icon">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -36,19 +47,19 @@
 
       <div class="navlink">
         <i class="ph-x" onclick="closeNav()"></i>
-        <a href="/index.html">Home</a>
-        <a href="/buy.html">Buy</a>
-        <a href="/sell.html">Sell</a>
-        <a href="/jobs.html">Jobs</a>
-        <a href="/find_agent.html">Find Agent</a>
-        <a href="/about.html">About</a>
+        <a href="/index.php">Home</a>
+        <a href="/buy.php">Buy</a>
+        <a href="/sell.php">Sell</a>
+        <a href="/jobs.php">Jobs</a>
+        <a href="/find_agent.php">Find Agent</a>
+        <a href="/about.php">About</a>
         <div class="login">
-          <a href="/login.html" class="log">Login</a>
+          <a href="/login.php" class="log">Login</a>
         </div>
       </div>
       <div class="login">
         <!-- <a href="">Sign In</a> -->
-        <a href="login.html" class="log">Login</a>
+        <a href="login.php" class="log">Login</a>
       </div>
 
     </div>
@@ -68,7 +79,7 @@
                           <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Doctors</p>
                             <h5 class="font-weight-bolder">
-                            <?php echo $Doc?>
+                            24
                             </h5>
                             
                           </div>
@@ -90,7 +101,7 @@
                           <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Nurses</p>
                             <h5 class="font-weight-bolder">
-                            <?php echo $Nurse?>
+                            30
                             </h5>
                             
                           </div>
@@ -112,7 +123,7 @@
                           <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Pharmacists</p>
                             <h5 class="font-weight-bolder">
-                            <?php echo $pharm?>
+                          30
                             </h5>
                             
                           </div>
@@ -134,7 +145,7 @@
                           <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Radiographers</p>
                             <h5 class="font-weight-bolder">
-                            <?php echo $Rad?>
+                              24
                             </h5>
                             
                           </div>
@@ -163,7 +174,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Med Lab Scientists</p>
                     <h5 class="font-weight-bolder">
-                    <?php echo $med?>
+                    24
                     </h5>
                     
                   </div>
@@ -185,7 +196,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Physiotherapists</p>
                     <h5 class="font-weight-bolder">
-                    <?php echo $Physio?>
+                   24
                     </h5>
                     
                   </div>
@@ -207,7 +218,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Accountants</p>
                     <h5 class="font-weight-bolder">
-                    <?php echo $Acc?>
+                    23
                     </h5>
                     
                   </div>
@@ -229,7 +240,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Patients Nationwide</p>
                     <h5 class="font-weight-bolder">
-                    <?php echo $pat ?>
+                      24
                     </h5>
                     
                   </div>
@@ -269,23 +280,23 @@
         <div class="col-md-4">
           <h6>COMPANY</h6>
           <div class="footer-links">
-            <a href="/about.html">About</a>
-            <a href="/about.html">Contact Us</a>
+            <a href="/about.php">About</a>
+            <a href="/about.php">Contact Us</a>
           </div>
           </div>
           <div class="col-md-4">
           <h6>BUY/SELL</h6>
           <div class="d-grid">
-          <a href="/find_agent.html">Find Agent</a>
-          <a href="/buy.html">Find a Home</a>
+          <a href="/find_agent.php">Find Agent</a>
+          <a href="/buy.php">Find a Home</a>
           <a href=""></a>
           </div>
         </div>
         <div class="col-md-4">
           <h6>OPPORTUNITIES</h6>
           <div class="d-grid">
-            <a href="/jobs.html">Career</a>
-            <a href="/jobs.html">Become a Volunteer</a>
+            <a href="/jobs.php">Career</a>
+            <a href="/jobs.php">Become a Volunteer</a>
             <a href=""></a>
             
           </div>
@@ -297,7 +308,7 @@
 <!-- 
         <div >
           ertyui -->
-          <img src="/img/Winner-certified-award.png" alt="" class="img-fluid">
+          <img src="../img/Winner-certified-award.png" alt="" class="img-fluid">
         <!-- </div> -->
       </div>
 
@@ -305,17 +316,17 @@
    <div class="row mt-5">
     <div class="col-md-4">
     <div class="terms">
-        <a href="terms.html">Terms</a>
-        <a href="housing.html">Fair Housing</a>
+        <a href="terms.php">Terms</a>
+        <a href="housing.php">Fair Housing</a>
      
-        <a href="alert.html">Fraud Alert</a>
+        <a href="alert.php">Fraud Alert</a>
         <a href="">Cookies</a>
       </div>
     </div>
   </div>
   <div class="row mt-5">
     <p style="font-size: 12px;">
-      ©2022 AttlasGroup. All Rights Reserved. AttlasGroup, the AttlasGroup logo, AttlasGroup Global Luxury and the AttlasGroup Global Luxury logo are trademarks of AttlasGroup Real Estate LLC. The AttlasGroup® System is comprised of company owned offices which are owned by a subsidiary of Realogy Brokerage Group LLC and franchised offices which are independently owned and operated. The AttlasGroup System fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Listing information is deemed reliable, but is not guaranteed.
+      &copy; <script> document.write(new Date().getFullYear()) </script>AttlasGroup. All Rights Reserved. AttlasGroup, the AttlasGroup logo, AttlasGroup Global Luxury and the AttlasGroup Global Luxury logo are trademarks of AttlasGroup Real Estate LLC. The AttlasGroup® System is comprised of company owned offices which are owned by a subsidiary of Realogy Brokerage Group LLC and franchised offices which are independently owned and operated. The AttlasGroup System fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Listing information is deemed reliable, but is not guaranteed.
     </p>
   </div>
   </div>
@@ -324,6 +335,6 @@
 <script src="./assets/js/app.js"></script>
 
       <script src="https://unpkg.com/phosphor-icons"></script>
-      <script src="/js/main.js"></script>
+      <script src="../js/main.js"></script>
 </body>
 </html>

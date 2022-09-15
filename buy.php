@@ -1,89 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" href="/img/build7.jpg" type="image/x-icon">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-  <link id="pagestyle" href="../assets/css/argon-dashboard.css" rel="stylesheet" />
-
-
-  <title>AttlasGroup</title>
-
-</head>
-
-<body>
-  <section id="">
-    <div class="nav nav navbar-fixed">
-      <a href="/">
-        <h2 class="navbrand">AttlasGroup</h2>
-      </a>
-
-      <i class="ph-list" onclick="navOpen()"></i>
-
-      <div class="navlink">
-        <i class="ph-x" onclick="closeNav()"></i>
-        <a href="index.html">Home</a>
-        <a href="buy.html">Buy</a>
-        <a href="sell.html">Sell</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="find_agent.html">Find Agent</a>
-        <a href="about.html">About</a>
-        <div class="login">
-          <a href="login.html" class="log">Login</a>
-        </div>
-      </div>
-      <div class="login">
-        <form action="">
-          <input type="text" class="form-control" placeholder="Search...">
-        </form>
-        <a href="login.html" class="log">Login</a>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- <section>
-    <div class="container my-4">
-      <form action="" class="form">
-        <div class="row">
-          <div class="col-md-3">
-            <label for="">SEARCH FOR HOME</label>
-            <input type="search" class="form-control" placeholder="Las Vegas,NV">
-          </div>
-
-          <div class="col-md-3">
-            <label for="">PRICE</label>
-            <select name="" id="" class="form-control form-select " placeholder="MIN-Price-MAX-price">
-              <option value="">$10,000-$50,000</option>
-              <option value="">$100,000-$150,000</option>
-            </select>
-          </div>
-
-          <div class="col-md-3">
-            <label for="">BATHS</label>
-            <select name="" id="" class="form-control form-select " placeholder="1+">
-              <option value="">1 Baths</option>
-              <option value="">2 Baths</option>
-              <option value="">5 Baths</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <button type="search" class="btn btn-primary mt-4"><i class="ph-magnifying-glass"></i>Search</button>
-
-          </div>
-
-        </div>
-      </form>
-    </div>
-  </section> -->
+<?php
+require_once('includes/header.php');
+?>
   <section>
   <div class="container-fluid card" id="buy">
     <div class="row mb-5 mt-4">
@@ -109,7 +26,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="/img/list7.jpg" class="d-block w-100" alt="...">
+              <img src="./img/list7.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption  d-md-block">
                 <h5>Front View</h5>
 
@@ -198,11 +115,11 @@
             Est. payment: $2,588/mo<br>
             9901 Fisher Bay Ct, Las Vegas, NV 89178
           </p>
-          <p class="text-start">
+          <p class="text-start  px-3">
             Newly built and designed within the illustrious Century Communities developments in Las Vegas, this elegant home faces a fantastic mountain view scenery. Privately situated at the end of a cul-de-sac, it is the perfect space for anyone seeking a single-family residence or other real estate investment opportunities. 
           </p>
 
-          <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+          <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
 
         </div>
       </div>
@@ -224,11 +141,11 @@
             Est. payment: $6,751/mo<br>
              9500 Rocky Cliff Pl, Las Vegas, NV 89144.
           </p>
-          <p class="text-start">
+          <p class="text-start px-3">
             Welcome to guard gated Eagle Rock*This desirable community sits on TPC golf course.Well over $250,000 worth of stunning travertine stone/marble/granite through out entire inside & outside of house*TRUE gourmet island kitchen w/granite slab counters,high end appliances & walk-in pantry*All bathrms w/full slab shower walls & floors in either granite, marble or travertine stone*Dual staircases,featuring solid slab travertine steps*4” travertine baseboards t/o*One full bed & bathrm downstairs*Primary suite w/walk-out deck,sitting room,custom built-in closet*Downstairs library/den w/custom wine bar & book shelves*
           </p>
 
-          <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+          <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
 
         </div>
 
@@ -255,7 +172,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="/img/list4.jpg" class="d-block w-100" alt="...">
+              <img src="./img/list4.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption  d-md-block">
                 <h5>Front View</h5>
 
@@ -462,7 +379,7 @@
             425 Coco Palms Ave, Las Vegas, NV 89123
           </p>
 
-          <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+          <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
 
         </div>
 
@@ -487,9 +404,9 @@
             2.5000% buyer's agent fee
           </p>
 
-          <p class="text-start">Completely renovated 4 bedroom home in the Northwest! Located at the end of the cul-de-sac in gated community, this home features too many custom upgrades to list! 3 way brick fireplace in living room, vaulted ceilings, new tile floors</p>
+          <p class="text-start  px-3">Completely renovated 4 bedroom home in the Northwest! Located at the end of the cul-de-sac in gated community, this home features too many custom upgrades to list! 3 way brick fireplace in living room, vaulted ceilings, new tile floors</p>
 
-          <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+          <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
 
         </div>
 
@@ -736,11 +653,11 @@
               Est. payment: $4,377/mo<br>
               4706 Antelope Wells Dr, Las Vegas, NV 89129
             </p>
-            <p class="text-start">
+            <p class="text-start  px-3">
               Relax & escape in the spacious entertainer's backyard oasis. Decompress in the private resort-style pool, create the perfect meal under in a a kitchen furnished to taste.
             </p>
   
-            <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+            <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
   
           </div>
   
@@ -765,9 +682,9 @@
             2.5000% buyer's agent fee
           </p>
 
-          <p class="text-start">This  home has a large yard, but is in need of your finishing touches . All of the flooring has already been purchased and is included in the sale ~ All appliances, to include the deep freezer and spare refrigerator in garage, come with the home ~ Save money and fix this home the way you want it.</p>
+          <p class="text-start  px-3">This  home has a large yard, but is in need of your finishing touches . All of the flooring has already been purchased and is included in the sale ~ All appliances, to include the deep freezer and spare refrigerator in garage, come with the home ~ Save money and fix this home the way you want it.</p>
 
-          <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+          <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
 
         </div>
 
@@ -794,7 +711,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="/img/list2.jpg"
+              <img src="./img/list2.jpg"
                 class="d-block w-100" alt="...">
               <div class="carousel-caption  d-md-block">
                 <h5>Front View</h5>
@@ -1003,11 +920,11 @@
             Est. payment: $3,493/mo<br>
             782 Santree Cir, Las Vegas, NV 89110.
           </p>
-          <p class="text-start">
+          <p class="text-start  px-3">
            This home is Beautifully well-kept landscaping with real grass in the front and backyard, that you can't get anymore in Las Vegas. With a well equiped Kitchen. Dual primary bedrooms, one downstairs and one upstairs. Primary bath  features a jetted spa tub, steam shower and brand new tile flooring. Laminate wood flooring throughout the main part of the home and brand new carpet just installed in all the bedrooms. Exterior of the home has been freshly painted.
           </p>
 
-          <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+          <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
 
         </div>
 
@@ -1032,9 +949,9 @@
               2.5000% buyer's agent fee
             </p>
             
-            <p class="text-start">This home contains One bedroom  King suite Fully furnished Condo-Hotel. This Platinum Resort unit is move-in ready and features 9’ ceilings, living room with plasma tv and energy efficient comfort systems, King bed, a full kitchen with breakfast bar, marble countertops and stainless-steel appliances. Spa-like bathroom with jetted tub, double sink, and separate walk-in shower. Amenities include Outdoor Pool,Restaurant and Bar, Modern Fitness Center.</p>
+            <p class="text-start  px-3">This home contains One bedroom  King suite Fully furnished Condo-Hotel. This Platinum Resort unit is move-in ready and features 9’ ceilings, living room with plasma tv and energy efficient comfort systems, King bed, a full kitchen with breakfast bar, marble countertops and stainless-steel appliances. Spa-like bathroom with jetted tub, double sink, and separate walk-in shower. Amenities include Outdoor Pool,Restaurant and Bar, Modern Fitness Center.</p>
   
-            <a href="find_agent.html" class="btn btn-primary rounded-pill w-35 mx-auto">Contact Agent</a>
+            <a href="find_agent.php" class="btn btn-primary rounded-pill w-50 mx-auto">Contact Agent</a>
   
           </div>
   
@@ -1158,90 +1075,7 @@
 
   </section>
 
-
-  <section>
-    <div class="container-fluid h-100 footer py-5">
-      <div class="footer-contents">
-        <div class="footer-logo">
-          <h1>AttlasGroup</h1>
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <i class="ph-envelope-simple"></i>
-            <p class="mb-0">attlasgroup90@gmail.com</p>
-          </div>
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <i class="ph-phone-call"></i>
-            <p class="mb-0">+1 (720) 336-9497</p>
-          </div>
-        </div>
-
-        <div class="links">
-          <div class="col-md-4">
-            <h6>COMPANY</h6>
-            <div class="footer-links">
-              <a href="about.html">About</a>
-              <a href="">Contact Us</a>
-              <!-- <a href="">News Letter</a> -->
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h6>BUY/SELL</h6>
-            <div class="d-grid">
-              <a href="find_agent.html">Find Agent</a>
-              <a href="buy.html">Find a Home</a>
-              <a href=""></a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h6>OPPORTUNITIES</h6>
-            <div class="d-grid">
-              <a href="jobs.html">Career</a>
-              <a href="">Become a Volunteer</a>
-              <a href=""></a>
-
-            </div>
-          </div>
-        </div>
-
-        <div class=" certificate">
-          <h2>CERTIFICATION</h2>
-          <img src="/img/Winner-certified-award.png" alt="" class="img-fluid">
-        </div>
-
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-4">
-        <div class="terms">
-            <a href="terms.html">Terms</a>
-            <a href="housing.html">Fair Housing</a>
-         
-            <a href="alert.html">Fraud Alert</a>
-            <a href="">Cookies</a>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <p style="font-size: 12px;">
-          ©2022 AttlasGroup. All Rights Reserved. AttlasGroup, the AttlasGroup logo, AttlasGroup Global Luxury and the AttlasGroup Global Luxury logo are trademarks of AttlasGroup Real Estate LLC. The AttlasGroup® System is comprised of company owned offices which are owned by a subsidiary of Realogy Brokerage Group LLC and franchised offices which are independently owned and operated. The AttlasGroup System fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Listing information is deemed reliable, but is not guaranteed.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Core -->
-  <script src="js/core/popper.min.js"></script>
-  <script src="js/core/bootstrap.min.js"></script>
-
-  <!-- Theme JS -->
-  <script src="js/argon-dashboard.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-
-  <script src="https://unpkg.com/phosphor-icons"></script>
-
-  <script src="/js/main.js"></script>
-</body>
-
-</html>
+<!--footer-->
+<?php
+require_once('includes/footer.php');
+?>

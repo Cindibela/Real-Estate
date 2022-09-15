@@ -1,81 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" href="/img/build7.jpg" type="image/x-icon">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-  <link id="pagestyle" href="../assets/css/argon-dashboard.css" rel="stylesheet" />
-
-
-  <title>AttlasGroup</title>
-
-</head>
-
-<body>
-
+<?php
+require_once('includes/header.php');
+?>
   <section>
-    <div class="nav nav ">
-      <a href="/">
-        <h2 class="navbrand">AttlasGroup</h2>
-      </a>
-
-      <i class="ph-list" onclick="navOpen()"></i>
-
-      <div class="navlink">
-        <i class="ph-x" onclick="closeNav()"></i>
-        <a href="index.html">Home</a>
-        <a href="buy.html">Buy</a>
-        <a href="sell.html">Sell</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="find_agent.html">Find Agent</a>
-        <a href="about.html">About</a>
-        <!-- <div class="login">
-          <a href="login.html" class="log">Login</a>
-        </div> -->
-      </div>
-      <div class="login">
-        <!-- <a href="">Sign In</a> -->
-        <form action="">
-          <input type="text" class="form-control" placeholder="Search...">
-        </form>
-        <a href="login.html" class="log">Login</a>
-      </div>
-
-    </div>
-
-  </section>
-  <section>
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <div class="row">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/h3.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="./img/h3.jpg" class="d-block w-100" style="height:75vh; width:100%; object-fit:cover" alt="...">
+              <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
-              </div>
+              </div> -->
             </div>
             <div class="carousel-item">
-              <img src="/img/h6.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="./img/h6.jpg" class="d-block w-100" style="height:75vh; width:100%; object-fit:cover" alt="...">
+              <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
-              </div>
+              </div> -->
             </div>
             <div class="carousel-item">
-              <img src="/img/h3.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="./img/h3.jpg" class="d-block w-100" style="height:75vh; width:100%; object-fit:cover" alt="...">
+              <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
-              </div>
+              </div> -->
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -109,13 +59,13 @@
           <h1>$200M</h1>
           <h3>Principal Equity Invested</h3>
           <hr>
-          <a role="button" href="about.html" class="btn btn-md btn-white rounded-pill">
+          <a role="button" href="about.php" class="btn btn-md btn-white rounded-pill">
             About Us
           </a>
 
         </div>
 
-        <div class="col-md-7 text">
+        <div class="col-md-7 text px-0">
           <h1>Estate Developer</h1>
           <p>
             AttlasGroup vertically integrated investment management approach yields secure multi-family real estate
@@ -125,7 +75,7 @@
             strategies has led to an almost perfect track record of investment success.
 
           </p>
-          <a role="button" href="about.html" class="btn btn-md btn-white rounded-pill">
+          <a role="button" href="about.php" class="btn btn-md btn-white rounded-pill">
             About Us
           </a>
         </div>
@@ -149,7 +99,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list7.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                        <img src="./img/list7.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -167,7 +117,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -178,7 +128,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list4.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                        <img src="./img/list4.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -196,7 +146,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -206,7 +156,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list5.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                        <img src="./img/list5.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -224,7 +174,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -234,7 +184,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list6.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                        <img src="./img/list6.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -250,7 +200,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -264,7 +214,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list10.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                        <img src="./img/list10.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -282,7 +232,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -292,7 +242,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list2.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                        <img src="./img/list2.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -311,7 +261,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -321,7 +271,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list9.webp" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                        <img src="./img/list9.webp" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -340,7 +290,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -350,7 +300,7 @@
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
                       <a href="" class="d-block shadow-xl border-radius-xl">
-                        <img src="/img/list8.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                        <img src="./img/list8.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
                     <div class="card-body px-1 pb-0">
@@ -367,7 +317,7 @@
                     </div>
                     <div>
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#staticBackdrop">
                         Contact Agent
                       </button>
                     </div>
@@ -380,147 +330,49 @@
       </div>
     </div>
   </section>
-  <!--footer-->
-  <section>
-    <div class="container-fluid h-100 footer py-5">
-      <div class="footer-contents">
-        <div class="footer-logo">
-          <h1>AttlasGroup</h1>
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <i class="ph-envelope-simple"></i>
-            <p class="mb-0">attlasgroup90@gmail.com</p>
-          </div>
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <i class="ph-phone-call"></i>
-            <p class="mb-0">+1 (720) 336-9497</p>
-          </div>
-        </div>
+  
 
-        <div class="links">
-          <div class="col-md-4">
-            <h6>COMPANY</h6>
-            <div class="footer-links">
-              <a href="about.html">About</a>
-              <a href="">Contact Us</a>
-              <!-- <a href="">Press</a> -->
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h6>BUY/SELL</h6>
-            <div class="d-grid">
-              <a href="find_agent.html">Find Agent</a>
-              <a href="buy.html">Find a Home</a>
-              <a href=""></a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h6>OPPORTUNITIES</h6>
-            <div class="d-grid">
-              <a href="jobs.html">Career</a>
-              <a href="">Become a Volunteer</a>
-              <a href=""></a>
-
-            </div>
-          </div>
-        </div>
-
-        <div class=" certificate">
-          <h2>CERTIFICATION</h2>
-          <!-- 
-        <div >
-          ertyui -->
-          <img src="/img/Winner-certified-award.png" alt="" class="img-fluid">
-          <!-- </div> -->
-        </div>
-        
-
+  <!--agent Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Agent</h5>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-4">
-        <div class="terms">
-            <a href="terms.html">Terms</a>
-            <a href="housing.html">Fair Housing</a>
-         
-            <a href="alert.html">Fraud Alert</a>
-            <a href="">Cookies</a>
+      <form  method="post" action="find_agent.php">
+       <div class="modal-body">
+        <p class="mb-0">Send Our Agent Message</p>
+          <div class="errorDiv"></div>
+          <div class="mb-3">
+            <label for="">Name</label>
+            <input name="name" type="text" class="form-control form-control-lg" placeholder="Name" aria-label="name">
           </div>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <p style="font-size: 12px;">
-          ©2022 AttlasGroup. All Rights Reserved. AttlasGroup, the AttlasGroup logo, AttlasGroup Global Luxury and the AttlasGroup Global Luxury logo are trademarks of AttlasGroup Real Estate LLC. The AttlasGroup® System is comprised of company owned offices which are owned by a subsidiary of Realogy Brokerage Group LLC and franchised offices which are independently owned and operated. The AttlasGroup System fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Listing information is deemed reliable, but is not guaranteed.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-center" id="exampleModalLabel">Contact Agent</h5>
-          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Phone</label>
-              <input type="number" class="form-control" id="phone">
-            </div>
-
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Message</label>
-              <input type="textarea" class="form-control" id="message">
-            </div>
-
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Finance Details</label>
-            </div>
-          </form>
+          <div class="mb-3">
+            <label for="">Email</label>
+            <input name="email" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+          </div>
+          <div class="mb-3">
+            <label for="">Phone Number</label>
+            <input name="phone" type="text" class="form-control form-control-lg" placeholder="Phone number" aria-label="Phone">
+          </div>
+          <div class="mb-3">
+            <label for="">Message</label>
+            <textarea name="message" class="form-control" id="" cols="20" rows="4"></textarea>
+          </div>
+          <p>This site is protected by reCAPTCHA and the Google <a href=""> Policy </a>and <a href="">Terms of Service apply.</a></p>
+          
         </div>
         <div class="modal-footer">
-
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Contact Agent</button>
+          <button type="submit" name="send" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          
         </div>
-      </div>
+      </form>
     </div>
   </div>
+</div>
 
 
-
-  <!-- Core -->
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
-
-  <!-- Theme JS -->
-  <script src="../assets/js/argon-dashboard.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-
-  <script src="https://unpkg.com/phosphor-icons"></script>
-
-  <script src="/js/main.js"></script>
-
-
-
-
-</body>
-
-</html>
+  <?php
+require_once('includes/footer.php');
+?>
