@@ -1,5 +1,25 @@
 <?php
 require_once('includes/header.php');
+
+if (isset($_POST['send'])){
+
+
+  $name = mysqli_real_escape_string($con,$_POST['name']);
+  $email = mysqli_real_escape_string($con,$_POST['email']);
+  $phone = mysqli_real_escape_string($con,$_POST['phone']);
+  $message = mysqli_real_escape_string($con,$_POST['message']);
+
+
+  $sql = "INSERT INTO `agent`(`name`, `email`, `phone`, `message`) VALUES ('$name','$email','$phone','$message')";
+
+
+        if (mysqli_query($con, $sql)) {
+            echo '<script>alert("Message Sent Successfully.");window.location.assign("index.php");</script>';
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($con);
+        }  
+      }
+  
 ?>
   <section>
     <div class="container-fluid px-0">
@@ -346,25 +366,25 @@ require_once('includes/header.php');
           <div class="errorDiv"></div>
           <div class="mb-3">
             <label for="">Name</label>
-            <input name="name" type="text" class="form-control form-control-lg" placeholder="Name" aria-label="name">
+            <input name="name" type="text" class="form-control form-control-lg" placeholder="Name" aria-label="name" required>
           </div>
           <div class="mb-3">
             <label for="">Email</label>
-            <input name="email" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+            <input name="email" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email" required>
           </div>
           <div class="mb-3">
             <label for="">Phone Number</label>
-            <input name="phone" type="text" class="form-control form-control-lg" placeholder="Phone number" aria-label="Phone">
+            <input name="phone" type="text" class="form-control form-control-lg" placeholder="Phone number" aria-label="Phone" required>
           </div>
           <div class="mb-3">
             <label for="">Message</label>
-            <textarea name="message" class="form-control" id="" cols="20" rows="4"></textarea>
+            <textarea name="message" class="form-control" id="" cols="20" rows="4" required></textarea>
           </div>
           <p>This site is protected by reCAPTCHA and the Google <a href=""> Policy </a>and <a href="">Terms of Service apply.</a></p>
           
         </div>
         <div class="modal-footer">
-          <button type="submit" name="send" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          <button type="submit" name="send" class="btn btn-primary">Submit</button>
           
         </div>
       </form>

@@ -110,53 +110,53 @@ if (isset($_POST['apply'])){
        <div class="modal-body">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" name="name" class="form-control" id="name">
+            <input type="text" name="name" class="form-control" id="name" required>
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
           </div>
           <div class="mb-3">
             <label  class="form-label">Phone</label>
-            <input type="number" name="phone" class="form-control" id="phone">
+            <input type="number" name="phone" class="form-control" id="phone" required>
           </div>
 
           <div class="mb-3">
             <label  class="form-label">Location/Address</label>
-            <input type="text" name="address" class="form-control" id="location">
+            <input type="text" name="address" class="form-control" id="location" required>
           </div>
           <div class="mb-3">
             <label  class="form-label">Zipcode</label>
-            <input type="text" name="zipcode" class="form-control" id="zipcode">
+            <input type="text" name="zipcode" class="form-control" id="zipcode" required>
           </div>
           <div class="mb-3">
             <label  class="form-label">Join As</label><br>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="join_as" id="inlineRadio1" value="Agent" />
+              <input class="form-check-input" type="radio" name="join_as" id="inlineRadio1" value="Agent" required />
               <label class="form-check-label" for="inlineRadio1">Agent</label>
             </div>
 
             <div class="form-check form-check-inline">
-             <input class="form-check-input" type="radio" name="join_as" id="inlineRadio2" value="Volunteer" />
+             <input class="form-check-input" type="radio" name="join_as" id="inlineRadio2" value="Volunteer"  required/>
               <label class="form-check-label" for="inlineRadio2">Volunteer</label>
             </div>
           </div>
           <div class="mb-3">
             <label  class="form-label">Gender</label><br>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male" />
+              <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male" required/>
               <label class="form-check-label" for="inlineRadio1">Male</label>
             </div>
 
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female" />
+              <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female" required />
               <label class="form-check-label" for="inlineRadio2">Female</label>
             </div>
           </div>
        </div>
         <div class="modal-footer">
-          <button type="submit" name="apply" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          <button type="submit" name="apply" class="btn btn-primary">Submit</button>
           
         </div>
       </form>

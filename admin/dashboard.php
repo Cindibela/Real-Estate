@@ -48,11 +48,11 @@
       <div class="navlink">
         <i class="ph-x" onclick="closeNav()"></i>
         <a href="/index.php">Home</a>
-        <a href="/buy.php">Buy</a>
-        <a href="/sell.php">Sell</a>
-        <a href="/jobs.php">Jobs</a>
-        <a href="/find_agent.php">Find Agent</a>
-        <a href="/about.php">About</a>
+        <a href="/buy.php">Buyers</a>
+        <a href="sellers.php">Sellers</a>
+        <a href="applicants.php">Applicants</a>
+        <a href="agents.php">Agent Messages</a>
+        <!-- <a href="/about.php">About</a> -->
         <div class="login">
           <a href="/login.php" class="log">Login</a>
         </div>

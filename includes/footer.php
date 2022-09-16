@@ -3,7 +3,7 @@
     <div class="container-fluid h-100 footer py-5">
       <div class="footer-contents">
         <div class="footer-logo mt-2">
-          <a href="index.html">
+          <a href="index.php">
           <h1>AttlasGroup</h1>
         </a>
           <div class="d-flex align-items-center gap-2 mb-3">
@@ -29,7 +29,7 @@
           <div class="col-md-4">
             <h6>COMPANY</h6>
             <div class="footer-links">
-              <a href="about.html">About</a>
+              <a href="about.php">About</a>
               <a href="">Contact Us</a>
               <!-- <a href="">Press</a> -->
             </div>
@@ -37,16 +37,16 @@
           <div class="col-md-4">
             <h6>BUY/SELL</h6>
             <div class="d-grid">
-              <a href="find_agent.html">Find Agent</a>
-              <a href="buy.html">Find a Home</a>
+              <a href="find_agent.php">Find Agent</a>
+              <a href="buy.php">Find a Home</a>
               
             </div>
           </div>
           <div class="col-md-4">
             <h6>OPPORTUNITIES</h6>
             <div class="d-grid">
-              <a href="jobs.html">Career</a>
-              <a href="jobs.html">Volunteer</a>
+              <a href="jobs.php">Career</a>
+              <a href="jobs.php">Volunteer</a>
               
 
             </div>
@@ -67,10 +67,10 @@
       <div class="row mt-5">
         <div class="col-md-4">
         <div class="terms">
-            <a href="terms.html">Terms</a>
-            <a href="housing.html">Fair Housing</a>
+            <a href="terms.php">Terms</a>
+            <a href="housing.php">Fair Housing</a>
          
-            <a href="alert.html">Fraud Alert</a>
+            <a href="alert.php">Fraud Alert</a>
             <a href="">Cookies</a>
           </div>
         </div>

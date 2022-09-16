@@ -48,7 +48,7 @@ if (isset($_POST['login'])) {
   $email = mysqli_real_escape_string($con, $_POST['email']);
   $password = mysqli_real_escape_string($con, $_POST['password']);
 
- $query = mysqli_query($con,"select * from admin  where email =? LIMIT 1");
+ $query = mysqli_query($con,"SELECT * FROM admin where email='$email'");
    
 
 if(mysqli_num_rows($query)>0){

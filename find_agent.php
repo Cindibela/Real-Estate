@@ -88,7 +88,7 @@ if (isset($_POST['send'])){
           
         </div>
         <div class="modal-footer">
-          <button type="submit" name="send" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          <button type="submit" name="send" class="btn btn-primary">Submit</button>
           
         </div>
       </form>

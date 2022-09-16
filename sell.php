@@ -4,6 +4,7 @@ include('./admin/connect.php');
 
 if (isset($_POST['send']))
 {
+  $name = mysqli_real_escape_string($con,$_POST['name']);
   $email = mysqli_real_escape_string($con,$_POST['email']);
   $phone = mysqli_real_escape_string($con,$_POST['phone']);
   $location = mysqli_real_escape_string($con,$_POST['location']);
@@ -13,7 +14,7 @@ if (isset($_POST['send']))
 
 
   
-  $sql2= "INSERT INTO `users`(`email`, `phone`, `location`, `price`, `details`) VALUES ('$email','$phone','$location','$price','$details')";
+  $sql2= "INSERT INTO `users`(`name`,`email`, `phone`, `location`, `price`, `details`) VALUES ('$name','$email','$phone','$location','$price','$details')";
 
 
       if ( mysqli_query($con, $sql2)) {
@@ -89,6 +90,10 @@ if (isset($_POST['send']))
      <form method="post" action="sell.php">
        <div class="modal-body">
         <p class="mb-0">Enter details of the house</p>
+        <div class="mb-1">
+            <label for="">Name</label>
+            <input type="text" name="name" class="form-control form-control-lg" placeholder="Davie Jones" aria-label="name" required>
+          </div>
           <div class="mb-1">
             <label for="">Email</label>
             <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email" required>
@@ -104,8 +109,8 @@ if (isset($_POST['send']))
           <div class="mb-1">
             <label for="">Price</label>
             <select name="price" id="" class="form-control form-select " placeholder="MIN-Price-MAX-price">
-              <option value="price1" required>$10,000-$50,000</option>
-              <option value="price2" required>$100,000-$150,000</option>
+              <option value="$10,000--$50,000" required>$10,000-$50,000</option>
+              <option value="$100,000-$150,00" required>$100,000-$150,000</option>
             </select>
           </div>
           <div class="mb-1">
@@ -114,7 +119,7 @@ if (isset($_POST['send']))
           </div>
       </div>
       <div class="modal-footer">
-        <button type="submit" name="send" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+        <button type="submit" name="send" class="btn btn-primary">Submit</button>
         
       </div>
       </form>
