@@ -3,8 +3,8 @@ require_once('includes/header.php');
 ?>
   <section>
   <div class="container-fluid card" id="buy">
-    <div class="row mb-5 mt-4">
-      <div class="col-md-6">
+    <div class="row mb-5 mt-4 border border-dark">
+      <div class="col-md-6 py-2">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -126,7 +126,7 @@ require_once('includes/header.php');
     </div>
 
     <!--2nd row-->
-    <div class="row mb-5">
+    <div class="row mb-5 border border-dark">
       <div class="col-md-6">
 
         <div class="row text-center mt-4">
@@ -257,7 +257,7 @@ require_once('includes/header.php');
     </div>
 
     <!--3rd Row-->
-    <div class="row mb-5">
+    <div class="row mb-5 border border-dark">
       <div class="col-md-6">
         <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -387,7 +387,7 @@ require_once('includes/header.php');
     </div>
 
     <!--4th Row-->
-    <div class="row mb-5">
+    <div class="row mb-5 border border-dark">
       <div class="col-md-6">
 
         <div class="row text-center mt-1">
@@ -521,7 +521,7 @@ require_once('includes/header.php');
     </div>
 
        <!--5th Row-->
-       <div class="row mb-5">
+       <div class="row mb-5 border border-dark">
         <div class="col-md-6">
           <div id="carouselExampleDark4" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -665,7 +665,7 @@ require_once('includes/header.php');
       </div>
      
       <!--6th Row-->
-    <div class="row mb-5">
+    <div class="row mb-5 border border-dark">
       <div class="col-md-6">
 
         <div class="row text-center mt-1">
@@ -799,7 +799,7 @@ require_once('includes/header.php');
     </div>
 
     <!--7th Row-->
-    <div class="row mb-5">
+    <div class="row mb-5 border border-dark"">
       <div class="col-md-6">
         <div id="carouselExampleDark6" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -932,7 +932,7 @@ require_once('includes/header.php');
     </div>
 
        <!--8th Row-->
-       <div class="row mb-5">
+       <div class="row mb-5 border border-dark">
         <div class="col-md-6">
   
           <div class="row text-center">

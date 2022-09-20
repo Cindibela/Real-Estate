@@ -3,12 +3,6 @@
  include('./admin/connect.php');
 
 if (isset($_POST['send'])){
-  
-
-  // $name = mysqli_real_escape_string($con,$_POST['name']);
-  // $email = mysqli_real_escape_string($con,$_POST['email']);
-  // $phone =  mysqli_real_escape_string($con,$_POST['phone']);
-  // $message =mysqli_real_escape_string($con, $_POST['message']);
 
   $name = mysqli_real_escape_string($con,$_POST['name']);
   $email = mysqli_real_escape_string($con,$_POST['email']);
@@ -77,7 +71,7 @@ if (isset($_POST['send'])){
             <input name="email" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email" required>
           </div>
           <div class="mb-3">
-            <label for="">Phone Number</label>
+            <label>Phone Number</label>
             <input name="phone" type="text" class="form-control form-control-lg" placeholder="Phone number" aria-label="Phone" required>
           </div>
           <div class="mb-3">
@@ -96,32 +90,6 @@ if (isset($_POST['send'])){
   </div>
 </div>
 
-      <script>
-        const contactForm = document.querySelector('#contactForm')
-        const errorDiv = document.querySelector('.errorDiv')
-
-        contactForm.addEventListener('submit', (e) => {
-        e.preventDefault()
-        formValidation( 
-                        contactForm.name.value.trim(), 
-                        contactForm.email.value.trim(), 
-                        contactForm.phone.value.trim(), 
-                        contactForm.message.value.trim()
-                    )
-    })
-
-    function formValidation(name, email, phone, message){
-        let errMsg;
-        if(!name || !email || !phone || !message){
-            errMsg = "Please fill in all fields"
-            errorDiv.innerHTML = `<p class="bg-danger text-center text-light py-1">${errMsg}</p>`
-        }
-
-        setTimeout(() => {
-            errorDiv.innerHTML = ""
-        },5000)
-    }
-  </script>
 
 <!-- footer -->
 <?php

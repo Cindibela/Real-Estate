@@ -119,7 +119,7 @@ if (isset($_POST['apply'])){
           </div>
           <div class="mb-3">
             <label  class="form-label">Phone</label>
-            <input type="number" name="phone" class="form-control" id="phone" required>
+            <input type="text" name="phone" class="form-control" id="phone" required>
           </div>
 
           <div class="mb-3">

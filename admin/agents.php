@@ -117,8 +117,6 @@
                   </th>
                   <th data-sortable="" style="width: 20%;"><a href="#" class="dataTable-sorter">Message</a>
                   </th>
-                  <th data-sortable="" style="width: 20%;"><a href="#" class="dataTable-sorter">Price</a>
-                  </th>
                   <th data-sortable="" style="width: 20%;"><a href="#" class="dataTable-sorter">Date</a>
                   </th>
                   <th data-sortable="" style="width: 20%;"><a href="#" class="dataTable-sorter">Attend</a>
@@ -147,18 +145,10 @@
                     </td>
                     <td class="text-sm font-weight-normal"><?php echo $row['email'] ?></td>
                   
-                  <td class="text-sm font-weight-normal text-center"><?php echo $row['phone'] ?></td>
-                  <td class=" text-center">
-                    <p class="text-xs font-weight-bold mb-0"><?php echo $row['location'] ?></p>
-
-                  </td>
-                  <td class=" text-center">
-                    <p class="text-xs font-weight-bold mb-0"><?php echo $row['price'] ?></p>
-                   </td>
-                   <td class="text-sm font-weight-normal text-center text-wrap"><?php echo $row['details'] ?></td>
-                   <td class=" text-center">
-                    <p class="text-xs font-weight-bold mb-0"><?php echo $row['date'] ?></p>
-                   </td>
+                  <td class="text-sm font-weight-normal"><?php echo $row['phone'] ?></td>
+                  <td class="text-sm font-weight-normal"><?php echo $row['message'] ?></td>
+                  
+                  <td class="text-sm font-weight-normal"><?php echo $row['date'] ?></td>
                   <td class=" text-center text-sm">
                      <form method="post" >
                        <input name="email" value="<?php echo $row['email'] ?>" type="hidden" >

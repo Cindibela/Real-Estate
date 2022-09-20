@@ -4,11 +4,12 @@
 
 //  $email = $_SESSION["email"];
 
+
  if (isset($_POST['attend'])){
     $email = mysqli_real_escape_string($con, $_POST['email']);
     $_SESSION["email"] = $email;
 
-    header ("location: patient_history.php");
+    header ("location: ");
 }
 
 

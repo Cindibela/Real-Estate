@@ -21,44 +21,14 @@ if (isset($_POST['send'])){
       }
   
 ?>
-  <section>
+  <section class="index" style=" background:linear-gradient(rgba( -0.5,-0.5,-0.5,-0.5),rgba( -0.5,-0.5,-0.5,-0.5)),url(./img/nh8.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh;">
     <div class="container-fluid px-0">
-      <div class="row">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/h3.jpg" class="d-block w-100" style="height:75vh; width:100%; object-fit:cover" alt="...">
-              <!-- <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div> -->
-            </div>
-            <div class="carousel-item">
-              <img src="./img/h6.jpg" class="d-block w-100" style="height:75vh; width:100%; object-fit:cover" alt="...">
-              <!-- <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div> -->
-            </div>
-            <div class="carousel-item">
-              <img src="./img/h3.jpg" class="d-block w-100" style="height:75vh; width:100%; object-fit:cover" alt="...">
-              <!-- <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div> -->
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+      <div class="row search py-10 mx-auto">
+
+      <h1>AttlasGroup</h1>
+      <h4>The Home Advantage</h4>
+      <h6>"Where Dreams Come Home"</h6>
+
       </div>
     </div>
   </section>
@@ -118,7 +88,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list7.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
@@ -147,7 +117,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list4.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                       </a>
                     </div>
@@ -175,7 +145,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list5.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
@@ -203,7 +173,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list6.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
@@ -233,7 +203,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list10.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
@@ -261,7 +231,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list2.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                       </a>
                     </div>
@@ -290,7 +260,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list9.webp" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>
@@ -319,7 +289,7 @@ if (isset($_POST['send'])){
                 <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
                   <div class="card card-blog card-plain">
                     <div class="position-relative">
-                      <a href="" class="d-block shadow-xl border-radius-xl">
+                      <a href="buy.php" class="d-block shadow-xl border-radius-xl">
                         <img src="./img/list8.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
                       </a>
                     </div>

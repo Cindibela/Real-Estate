@@ -68,7 +68,7 @@
         <div class="col-md-4">
         <div class="terms">
             <a href="terms.php">Terms</a>
-            <a href="housing.php">Fair Housing</a>
+            <a href="fair_housing.php">Fair Housing</a>
          
             <a href="alert.php">Fraud Alert</a>
             <a href="">Cookies</a>

@@ -17,8 +17,9 @@ a{
     
 }
 
+
+
 #background{
-    /* background-image: url(https://media.istockphoto.com/photos/idyllic-home-with-covered-porch-picture-id479767332?b=1&k=20&m=479767332&s=170667a&w=0&h=n82FpX80ba4gf7YhkHB_rP8H__TiejXkzy5bQiSATuk=); */
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://media.istockphoto.com/photos/idyllic-home-with-covered-porch-picture-id479767332?b=1&k=20&m=479767332&s=170667a&w=0&h=n82FpX80ba4gf7YhkHB_rP8H__TiejXkzy5bQiSATuk=);
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,7 +70,7 @@ display: flex;
     border-radius: 10px;
 }
 
-.search{
+/* .search{
     width: 55%;
     margin-left: auto;
     margin-right: auto;
@@ -78,20 +79,23 @@ display: flex;
     position: relative;
     top: 35%;
     z-index: 1;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-}
+    left: 50%; 
+     transform: translate(-50%, -50%);
+} */
 
 .search h1{
-    font-size: 55px;
+    font-size: 100px;
     color: azure !important; 
+    position: relative;
+    z-index: 1;
+   
 }
 
-.search p{
+/* .search p{
     font-size: 20px;
     font-style: italic;
 
-}
+} */
 
 .ph-list, .ph-x{
     display: none !important;
@@ -381,6 +385,14 @@ font-size: 80px;
         padding: 10px 0;
         /* margin-top: 10px; */
 
+    }
+
+    .search h1{
+        font-size: 50px;
+        color: azure !important; 
+        position: relative;
+        z-index: 1;
+       
     }
 
 }
