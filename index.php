@@ -19,16 +19,27 @@ if (isset($_POST['send'])){
             echo "Error: " . $sql . "<br>" . mysqli_error($con);
         }  
       }
+    
   
 ?>
-  <section class="index" style=" background:linear-gradient(rgba( -0.5,-0.5,-0.5,-0.5),rgba( -0.5,-0.5,-0.5,-0.5)),url(./img/nh8.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh;">
+  <section class="index" style=" background:linear-gradient(rgba( -0.5,-0.5,-0.5,-0.5),rgba( -0.5,-0.5,-0.5,-0.5)),url(./img/nh8.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh; position:relative">
     <div class="container-fluid px-0">
-      <div class="row search py-10 mx-auto">
-
-      <h1>AttlasGroup</h1>
-      <h4>The Home Advantage</h4>
-      <h6>"Where Dreams Come Home"</h6>
-
+      <div class="row search mx-auto">
+        <div class="row justify-content-center align-items-center">
+          <div class="col">
+            <h2 style="font-size:80px;">Attlas</h2>
+            <h1>Group</h1>
+            <span class="px-3 py-2 rounded-pill bg-primary text-white my-5">Alpha</span>
+            <p class="fw-bolder mt-2">The Home Advantage,Where Dreams Come Home</p>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-auto">
+            <form class="mx-auto">
+              <input type="" class="form-control form-control-lg" placeholder="City,State,Zip">
+            </form>
+            </div>
+        </div>
       </div>
     </div>
   </section>

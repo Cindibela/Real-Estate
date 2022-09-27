@@ -4,11 +4,20 @@
 //  include('check_login.php');
 //  require('/includes/check_login.php');
 
+//querys
+$query1 = mysqli_query($con, "select * from agent");
+$agent=mysqli_num_rows($query1);
+$query2 = mysqli_query($con, "select * from agent");
+$buy=mysqli_num_rows($query2);
+$query3 = mysqli_query($con, "select * from jobs");
+$jobs=mysqli_num_rows($query3);
+$query4 = mysqli_query($con, "select * from users");
+$sell=mysqli_num_rows($query4);
 
- ?>
 
 
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,8 +56,8 @@
 
       <div class="navlink">
         <i class="ph-x" onclick="closeNav()"></i>
-        <a href="/index.php">Home</a>
-        <a href="/buy.php">Buyers</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="buy.php">Buyers</a>
         <a href="sellers.php">Sellers</a>
         <a href="applicants.php">Applicants</a>
         <a href="agents.php">Agent Messages</a>
@@ -59,7 +68,7 @@
       </div>
       <div class="login">
         <!-- <a href="">Sign In</a> -->
-        <a href="login.php" class="log">Login</a>
+        <a href="logout.php" class="log">Logout</a>
       </div>
 
     </div>
@@ -71,15 +80,15 @@
       <div class="row py-5 mb-4">
            <div class="col-lg-12">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                   <div class="card  mb-4">
                     <div class="card-body p-3">
                       <div class="row">
                         <div class="col-8">
                           <div class="numbers">
-                            <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Doctors</p>
+                            <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number of Buyer</p>
                             <h5 class="font-weight-bolder">
-                            24
+                            <?php echo $buy ?>
                             </h5>
                             
                           </div>
@@ -93,15 +102,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                   <div class="card  mb-4">
                     <div class="card-body p-3">
                       <div class="row">
                         <div class="col-8">
                           <div class="numbers">
-                            <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Nurses</p>
+                            <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number of Sellers</p>
                             <h5 class="font-weight-bolder">
-                            30
+                            <?php echo $sell?>
                             </h5>
                             
                           </div>
@@ -115,50 +124,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card  mb-4">
-                    <div class="card-body p-3">
-                      <div class="row">
-                        <div class="col-8">
-                          <div class="numbers">
-                            <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Pharmacists</p>
-                            <h5 class="font-weight-bolder">
-                          30
-                            </h5>
-                            
-                          </div>
-                        </div>
-                        <div class="col-4 text-end">
-                          <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                            <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="col-lg-3 col-md-6 col-12">
-                  <div class="card  mb-4">
-                    <div class="card-body p-3">
-                      <div class="row">
-                        <div class="col-8">
-                          <div class="numbers">
-                            <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Radiographers</p>
-                            <h5 class="font-weight-bolder">
-                              24
-                            </h5>
-                            
-                          </div>
-                        </div>
-                        <div class="col-4 text-end">
-                          <div class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
-                            <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
+                
               </div>
             </div>
           </div>
@@ -166,15 +132,15 @@
     <div class="row">
      <div class="col-lg-12">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-lg-6 col-md-6 col-12">
           <div class="card  mb-4">
             <div class="card-body p-3">
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Med Lab Scientists</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number of Applicants</p>
                     <h5 class="font-weight-bolder">
-                    24
+                    <?php echo $jobs ?>
                     </h5>
                     
                   </div>
@@ -188,15 +154,15 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-lg-6 col-md-6 col-12">
           <div class="card  mb-4">
             <div class="card-body p-3">
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Physiotherapists</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Agent Messages</p>
                     <h5 class="font-weight-bolder">
-                   24
+                    <?php echo $agent ?>
                     </h5>
                     
                   </div>
@@ -210,50 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="card  mb-4">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
-                  <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Accountants</p>
-                    <h5 class="font-weight-bolder">
-                    23
-                    </h5>
-                    
-                  </div>
-                </div>
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-secondary shadow-success text-center rounded-circle">
-                    <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-lg-3 col-md-6 col-12">
-          <div class="card  mb-4">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
-                  <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Number Patients Nationwide</p>
-                    <h5 class="font-weight-bolder">
-                      24
-                    </h5>
-                    
-                  </div>
-                </div>
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-dark shadow-warning text-center rounded-circle">
-                    <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        
       </div>
     </div>
     </div>

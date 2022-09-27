@@ -2,76 +2,31 @@
  session_start();
  include ('connect.php');
 
-
-//  if (isset($_POST['login']))
-//  {
-//   $email = mysqli_real_escape_string($con,$_POST['email']);
-//   $password = mysqli_real_escape_string($con,$_POST['password']);
-
-//   // $email= $_POST['email'];
-//   // $password= $_POST['password'];
-
- 
-// $query = mysqli_query($con,"SELECT * FROM admin where email='$email'");
-   
-
-// if(mysqli_num_rows($query)>0){
-//     $row = mysqli_fetch_array($query);
-
-//     if (password_verify($password, $row['password'])){
-//         if($row['user_type']==['admin']){
-//             $_SESSION['userid'] = $email;
-//             $_SESSION['id'] = session_id();
-            
-//             echo '<script>alert("SUCCESSFUL.");window.location.assign("dashboard.php");</script>';
-    
-//         }else{
-//             $_SESSION['userid'] = $email;
-//             $_SESSION['id'] = session_id();
-            
-//             echo '<script>alert("Login Success.");window.location.assign("dashboard.php");</script>';
-//         }
-//     }
-//     else{
-//         echo '<script>alert("Invalid Login Details.");window.location.assign("login.php");</script>';
-    
-//  }   }else{
-//     echo '<script>alert("Invalid Login Details.");window.location.assign("login.php");</script>';
-// }
-
-
-
-//  }
+function hashPassword($value)
+ {
+  return md5(sha1(sha1(md5(sha1(md5(sha1(md5($value))))))));
+ }
 
 
 if (isset($_POST['login'])) {
   $email = mysqli_real_escape_string($con, $_POST['email']);
   $password = mysqli_real_escape_string($con, $_POST['password']);
+  $hash = mysqli_real_escape_string($con, $_POST['password']);
 
- $query = mysqli_query($con,"SELECT * FROM admin where email='$email'");
-   
+  $hashPassword = hashPassword($password);
 
-if(mysqli_num_rows($query)>0){
-    $row = mysqli_fetch_array($query);
+  $query = mysqli_query($con,"select * from admin where email='$email' and password='$hashPassword'");
+  if(mysqli_num_rows($query)>0){
+    $row = mysqli_fetch_array($query); 
 
-     
-          if ((password_verify($password, $row['password']))) {
-              //login sucess i.e the user is logged in sucessfully
-              if($row['user_type']==['admin']){
-              $_SESSION['userid'] = $email;
-              $_SESSION['id'] = session_id();
-              //flash message
-              //  $_SESSION['message'] = "you are now logged in!";
-              //  $_SESSION['alert-class'] = "alert-success ";
-              header('location: dashboard.php');
-              exit();
-          }
-          
-          }else{
-            echo '<script>alert("Invalid Login Details.");window.location.assign("login.php");</script>';
+    $_SESSION['userid'] = $email;
+    $_SESSION['id'] = session_id(); 
 
-         
-      }
+    echo '<script>alert("Login Success.");window.location.assign("dashboard.php");</script>';
+  
+  
+  } else{
+    echo '<script>alert("Invalid Login Details.");window.location.assign("login.php");</script>';
   }
 }
 
@@ -172,29 +127,6 @@ if(mysqli_num_rows($query)>0){
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="/js/main.js"></script>
 
-    <script>
-      const contactForm = document.querySelector('#contactForm')
-      const errorDiv = document.querySelector('.errorDiv')
-
-      contactForm.addEventListener('submit', (e) => {
-      e.preventDefault()
-      formValidation( 
-                      contactForm.email.value.trim(),
-                      document.querySelector(".password"),
-                  )
-      })
-
-      function formValidation(email, password){
-          let errMsg;
-          if(!email || !password){
-              errMsg = "Please fill in all fields"
-              errorDiv.innerHTML = `<p class="bg-danger text-center text-light py-1">${errMsg}</p>`
-          }
-
-          setTimeout(() => {
-              errorDiv.innerHTML = ""
-          },5000)
-      }
-    </script>
+    
     </body>
     </html>

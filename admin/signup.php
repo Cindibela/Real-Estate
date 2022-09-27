@@ -2,6 +2,11 @@
  session_start();
  include ('connect.php');
 
+ function hashPassword($value)
+ {
+  return md5(sha1(sha1(md5(sha1(md5(sha1(md5($value))))))));
+ }
+
 
 if (isset($_POST['submit']))
 {
@@ -11,10 +16,8 @@ if (isset($_POST['submit']))
     
      
       if(user_validate_r($email)==true){
-         // $hash = password_hash($password, PASSWORD_DEFAULT);
-
-    
-    $hash = password_hash($password, PASSWORD_DEFAULT);
+        
+    $hash = hashPassword($password);
     $sql = "INSERT INTO admin (name, email, password) VALUES ('$name','$email','$hash')";
 
         if (mysqli_query($con, $sql)) 
@@ -102,7 +105,8 @@ mysqli_close($con);
       </div>
 
     </div>
-    <div class="login-box col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 ms-auto" style="transform: translate(-50%, -50%); position: absolute; top: 60%; left: 50%; background-color: aliceblue; border-radius: 10px;">
+    <!-- transform: translate(-50%, -50%); position: absolute; -->
+    <div class="login-box col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 ms-auto" style=" top: 60%; left: 50%; background-color: aliceblue; border-radius: 10px;">
       <div class="card card-plain">
         <div class="card-header pb-0 text-start">
           <h4 class="font-weight-bolder">Sign Up</h4>

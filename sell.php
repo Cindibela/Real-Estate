@@ -42,7 +42,7 @@ if (isset($_POST['send']))
             </p> -->
         </div>
         <div>
-          <a type="button" class="btn btn-dark rounded-pill btnsell w-35" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <a type="button" class="btn btn-dark rounded-pill btnstart w-50" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Contact Agent
           </a>
         </div>
